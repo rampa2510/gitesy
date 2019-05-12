@@ -16,7 +16,7 @@
     "javascript",
     "git"
   ],
-  "author": "Ram pandey",
+  "author": "Ram pandey  <iamram2510@ieee.org>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ram2510/autogit/issues"
@@ -33,9 +33,13 @@
     "lodash": "^4.17.11",
     "minimist": "^1.2.0",
     "simple-git": "^1.113.0",
-    "touch": "^3.1.0"
+    "touch": "^3.1.0",
+    "yargs": "^13.2.2"
   },
   "devDependencies": {
     "jest": "^24.8.0"
+  },
+  "bin": {
+    "autogit": "./index.js"
   }
 }

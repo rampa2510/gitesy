@@ -4,7 +4,7 @@
   "description": "A nodejs based cli which automates the creation of local and remote git repositories",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -34,5 +34,8 @@
     "minimist": "^1.2.0",
     "simple-git": "^1.113.0",
     "touch": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }

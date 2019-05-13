@@ -28,12 +28,12 @@
     "clui": "^0.3.6",
     "configstore": "^4.0.0",
     "enquirer": "^2.3.0",
-    "github-api": "^3.2.0",
     "simple-git": "^1.113.0",
     "yargs": "^13.2.2"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "mock-stdin": "^0.3.1"
   },
   "bin": {
     "autogit": "./index.js"

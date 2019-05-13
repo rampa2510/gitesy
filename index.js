@@ -7,8 +7,6 @@
 //========================================================================================
 
 const chalk       =     require('chalk'),
-      clear       =     require('clear'),
-      figlet      =     require('figlet'),
       Configstore =     require('configstore'),
       
 
@@ -29,7 +27,7 @@ const argv =  require('yargs')
               .option('remote',{
                 alias:'r',
                 describe:"remote repo choice",
-                choices:['github', 'bitbucket', 'gitlab'],
+                // choices:['github', 'bitbucket', 'gitlab'],
                 nargs:1,
                 default:'github',
                 type:'string'
@@ -45,11 +43,10 @@ const argv =  require('yargs')
                 describe:'The app you want to make',
                 nargs:1,
                 type:'string',
-                choices:['node(n)', 'express(e)'],
+                // choices:['node(n)', 'express(e)'],
               })
               .help("h")
-              .alias('h', 'help')
-              .demandOption(['name'],'Please provide name to work with this tool')
+              .demandOption(['name','app'],'Please provide name and app type to work with this tool')
               .argv
 
 // we check here whether the directory exists or not

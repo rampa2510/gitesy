@@ -2,7 +2,8 @@
   "name": "autogit",
   "version": "1.0.0",
   "description": "A nodejs based cli which automates the creation of local and remote git repositories",
-  "main": "index.js",
+  "main": "bin/index.js",
+  "preferGlobal": true,
   "scripts": {
     "test": "jest"
   },
@@ -24,13 +25,10 @@
   "homepage": "https://github.com/ram2510/autogit#readme",
   "dependencies": {
     "chalk": "^2.4.2",
-    "clear": "^0.1.0",
     "clui": "^0.3.6",
     "configstore": "^4.0.0",
-    "figlet": "^1.2.1",
+    "enquirer": "^2.3.0",
     "github-api": "^3.2.0",
-    "inquirer": "^6.3.1",
-    "minimist": "^1.2.0",
     "simple-git": "^1.113.0",
     "yargs": "^13.2.2"
   },

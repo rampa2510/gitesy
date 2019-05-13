@@ -8,11 +8,20 @@
 
 const chalk       =     require('chalk'),
       clear       =     require('clear'),
-      figlet      =     require('figlet');
+      figlet      =     require('figlet'),
+      Configstore =     require('configstore'),
+      
 
 //########################################################################################
 
-// console.log(require('./lib/files')('autogi'));
+//========================================================================================
+/*                                                                                      *
+ *                                  require the modules                                 *
+ *                                                                                      */
+//========================================================================================
+
+      { registerNewToken }    =   require('./lib/remote')
+
 
 // the yargs starting script to accept arguments
 const argv =  require('yargs')
@@ -52,9 +61,21 @@ if(isFileExists){
   process.exit();
 }else{
   const run = async ()=>{
+
+    // store the creds in the config file
+    //  Tip: on macOS/Linux, you’ll find the file in /Users/[YOUR-USERNAME]/.config/configstore/autogit.json
+    const conf = new Configstore('autogit');
+    if(conf.get(`${argv.remote}.token`)){
+      console.log('hello')
+
+    }else{
     const {askRemoteCreds} = require('./lib/questions');
     const creds = await askRemoteCreds(argv.remote);
-    console.log(creds);
+    console.log(conf.get("test"));
+    let token = registerNewToken(argv.remote,creds);
+    console.log(token);
+  }
   }
   run()
 }
+

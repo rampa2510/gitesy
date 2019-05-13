@@ -26,10 +26,10 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "clui": "^0.3.6",
+    "commander": "^2.20.0",
     "configstore": "^4.0.0",
     "enquirer": "^2.3.0",
-    "simple-git": "^1.113.0",
-    "yargs": "^13.2.2"
+    "simple-git": "^1.113.0"
   },
   "devDependencies": {
     "jest": "^24.8.0",

@@ -9,9 +9,6 @@ const { program } = require('../lib/showCli');
 //########################################################################################
 
 var object = {
-  // remote:expect.anything(),
-  // app:expect.anything(),
-  // name:expect.anything()
   remote:expect.any(String)
 }
 

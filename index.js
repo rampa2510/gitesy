@@ -18,8 +18,8 @@ const chalk       =     require('chalk'),
  *                                                                                      */
 //========================================================================================
 
-      { registerNewToken }    =   require('./lib/remote'),
-      { program,make_red }                   =   require('./lib/showCli')
+      { registerNewToken,createRemoteRep }         =   require('./lib/remote'),
+      { program,make_red }                         =   require('./lib/showCli')
 
 // // we wether all the inputs were provided or not
 
@@ -46,10 +46,15 @@ if(isFileExists){
 
     }else{
     const {askRemoteCreds} = require('./lib/questions');
+
+    // ask for creds username , pass
     const creds = await askRemoteCreds(program.remote);
-    console.log(conf.get("test"));
-    let token = registerNewToken(program.remote,creds);
-    console.log(token);
+
+    // we get the token for the github account acces
+    let token = await registerNewToken(program.remote,creds);
+
+    // we get the details of the remote repo or the program crashes
+    let remoteRepoDetails =await createRemoteRep(token,program.app);
   }
   }
   run()

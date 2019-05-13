@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/ram2510/autogit#readme",
   "dependencies": {
+    "@octokit/rest": "^16.25.4",
     "chalk": "^2.4.2",
     "clui": "^0.3.6",
     "commander": "^2.20.0",

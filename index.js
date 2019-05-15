@@ -46,15 +46,20 @@ if(isFileExists){
 
     }else{
     const {askRemoteCreds} = require('./lib/questions');
+      try {
+        // ask for creds username , pass
+        const creds = await askRemoteCreds(program.remote);
 
-    // ask for creds username , pass
-    const creds = await askRemoteCreds(program.remote);
+        // we get the token for the github account acces
+        let token = await registerNewToken(program.remote,creds);
+        console.log(token);
+        // we get the details of the remote repo or the program crashes
+        let remoteRepoDetails =await createRemoteRep(token,program.app,program.name,program.remote);
 
-    // we get the token for the github account acces
-    let token = await registerNewToken(program.remote,creds);
-
-    // we get the details of the remote repo or the program crashes
-    let remoteRepoDetails =await createRemoteRep(token,program.app);
+      } catch (error) {
+        
+      }
+    
   }
   }
   run()

@@ -9,6 +9,9 @@ const { createRemoteRep,registerNewToken }    =   require('../lib/remote');
 //########################################################################################
 const { stdin }           = require('mock-stdin')
 
+beforeAll(() => {
+  process.env = Object.assign(process.env, { ENV: 'test' });
+});
 
 // Mock stdin so we can send messages to the CLI
 

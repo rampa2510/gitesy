@@ -19,7 +19,8 @@ const chalk       =     require('chalk'),
 //========================================================================================
 
       { registerNewToken,createRemoteRep }         =   require('./lib/remote'),
-      { program,make_red }                         =   require('./lib/showCli')
+      { program,make_red }                         =   require('./lib/showCli'),
+      { cloneRemoteRepo }                          = require('./lib/local')
 
 // // we wether all the inputs were provided or not
 
@@ -27,9 +28,13 @@ if(!(program.app && program.name)){
   program.help(make_red)
 } 
 
+
+// get the directory from which command is executed from the terminal
+var pathname = process.cwd()
+
 // check wether the file exists or not
 
-var isFileExists = require('./lib/files')(program.name);
+var isFileExists = require('./lib/files')(program.name,pathname);
 
 
 if(isFileExists){
@@ -52,12 +57,15 @@ if(isFileExists){
 
         // we get the token for the github account acces
         let token = await registerNewToken(program.remote,creds);
-        console.log(token);
         // we get the details of the remote repo or the program crashes
         let remoteRepoDetails =await createRemoteRep(token,program.app,program.name,program.remote);
 
+        // we clone the remote repo here
+        cloneRemoteRepo(pathname,creds,program.name)
+
       } catch (error) {
-        
+       // this catch block will be executed if the user quits the program 
+       console.log(error)
       }
     
   }

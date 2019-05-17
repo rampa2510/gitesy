@@ -5,7 +5,8 @@
   "main": "bin/index.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint":"standard --fix"
   },
   "repository": {
     "type": "git",

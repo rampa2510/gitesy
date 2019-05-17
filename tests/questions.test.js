@@ -1,12 +1,11 @@
-//========================================================================================
+//= =======================================================================================
 /*                                                                                      *
  *                                 require the functions                                *
  *                                                                                      */
-//========================================================================================
+//= =======================================================================================
 
-const { askRemoteCreds }  = require('../lib/questions');
-const { stdin }           = require('mock-stdin')
-
+const { askRemoteCreds } = require('../lib/questions')
+const { stdin } = require('mock-stdin')
 
 // Mock stdin so we can send messages to the CLI
 
@@ -32,10 +31,9 @@ describe('Test for asking Questions', () => {
   }
   setTimeout(() => sendKeystrokesForUsername().then(), 5)
   setTimeout(() => sendKeystrokesForPass().then(), 7)
-  it('should be equal to the specidied object',async (done)=>{
-    const creds = await askRemoteCreds('github');
-    expect(creds).toStrictEqual({username:'r',password:'r'})
-   done()
-  })  
+  it('should be equal to the specidied object', async (done) => {
+    const creds = await askRemoteCreds('github')
+    expect(creds).toStrictEqual({ username: 'r', password: 'r' })
+    done()
+  })
 })
-

@@ -61,7 +61,8 @@ if(isFileExists){
         let remoteRepoDetails =await createRemoteRep(token,program.app,program.name,program.remote);
 
         // we clone the remote repo here
-        cloneRemoteRepo(pathname,creds,program.name)
+        var isLocalDirCreated =await cloneRemoteRepo(pathname,creds,program.name);
+        console.log(isLocalDirCreated);
 
       } catch (error) {
        // this catch block will be executed if the user quits the program 

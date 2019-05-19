@@ -1,16 +1,16 @@
 {
-  "name": "autogit",
+  "name": "gitesy",
   "version": "1.0.0",
   "description": "A nodejs based cli which automates the creation of local and remote git repositories",
   "main": "bin/index.js",
   "preferGlobal": true,
   "scripts": {
     "test": "jest",
-    "lint":"standard --fix"
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ram2510/autogit.git"
+    "url": "git+https://github.com/ram2510/gitesy.git"
   },
   "keywords": [
     "cli",
@@ -21,9 +21,9 @@
   "author": "Ram pandey  <iamram2510@ieee.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ram2510/autogit/issues"
+    "url": "https://github.com/ram2510/gitesy/issues"
   },
-  "homepage": "https://github.com/ram2510/autogit#readme",
+  "homepage": "https://github.com/ram2510/gitesy#readme",
   "dependencies": {
     "@octokit/rest": "^16.25.4",
     "chalk": "^2.4.2",
@@ -38,6 +38,6 @@
     "mock-stdin": "^0.3.1"
   },
   "bin": {
-    "autogit": "./index.js"
+    "gitesy": "./index.js"
   }
 }

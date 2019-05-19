@@ -43,7 +43,7 @@ if (isFileExists) {
   console.log(chalk.red('Already a git repository!'))
   process.exit()
 }
-const run = async () => {
+(async () => {
   // store the creds in the config file
   //  Tip: on macOS/Linux, you’ll find the file in /Users/[YOUR-USERNAME]/.config/configstore/autogit.json
   const conf = new Configstore('autogit')
@@ -100,5 +100,5 @@ const run = async () => {
       })
     }
   }
-}
-run()
+})()
+

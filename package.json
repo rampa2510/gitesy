@@ -1,6 +1,6 @@
 {
   "name": "gitesy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A nodejs based cli which automates the creation of local and remote git repositories",
   "main": "bin/index.js",
   "preferGlobal": true,

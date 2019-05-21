@@ -116,10 +116,6 @@ so that you can use it later
   ![create template demo](files/template.gif)
 
 
-
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
-
 ---
 
 ## Contributing

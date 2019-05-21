@@ -20,7 +20,8 @@
 ## Work under progress will update after completion
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/codingpanda25.svg?label=Follow&style=social)
- [![linkedin](https://img.shields.io/badge/connect%20with%20me-linkedIn-green.svg?style=for-the-badge&logo=appveyor)](https://www.linkedin.com/in/iamram2510)
+ [![linkedin](https://img.shields.io/badge/connect%20with%20me-linkedIn-green.svg?style=for-the-badge&logo=appveyor)](https://www.linkedin.com/in/iamram2510) [![GMAIL](https://img.shields.io/static/v1.svg?label=send&message=iamram2510@ieee.org&color=red&logo=gmail&style=social)](https://www.github.com/ram2510) 
+
 
 
 <!-- ***INSERT ANOTHER GRAPHIC HERE***

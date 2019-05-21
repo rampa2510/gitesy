@@ -53,15 +53,16 @@ if (isFileExists) {
     var usePrevCreds = await askToUsePrevCreds()
 
     if (usePrevCreds) {
-      var isAllOk = await createRemoteAndLocalRepo(program)
-      console.log(isAllOk)
+      var isRepoCreated = await createRemoteAndLocalRepo(program)
+
+
     } else {
       const { askRemoteCreds } = require('./lib/questions')
       try {
       // ask for creds username , pass
         const creds = await askRemoteCreds(program.remote)
 
-        conf.set(`${remoteWebHosting}.creds`, creds)
+        conf.set(`${program.remote}.creds`, creds)
 
         var isRepoCreated = await createRemoteAndLocalRepo(program, pathname)
 
@@ -86,7 +87,7 @@ if (isFileExists) {
       var isRepoCreated = await createRemoteAndLocalRepo(program)
 
       if (!isRepoCreated) {
-        throw false
+        throw new Error('')
       }
     } catch (error) {
       // when a error occurs we want to delete the remote repo
@@ -101,4 +102,3 @@ if (isFileExists) {
     }
   }
 })()
-

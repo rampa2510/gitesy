@@ -5,7 +5,7 @@
   "main": "bin/index.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "jest && codecov",
+    "test": "jest",
     "lint": "standard --fix"
   },
   "repository": {

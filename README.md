@@ -13,7 +13,6 @@
 [![GitHub API](https://img.shields.io/badge/GitHub-API-teal.svg?style=flat&logo=github)](https://developer.github.com/v3/) [![GitHub gitesy](https://img.shields.io/badge/gitesy-blue.svg?style=flat&logo=github)](https://gitesy.com/) [![Known Vulnerabilities](https://snyk.io/test/github/ram2510/gitesy/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ram2510/gitesy?targetFile=package.json) 
 [![HitCount](https://hits.dwyl.com/ram2510/gitesy.svg)](https://hits.dwyl.com/ram2510/gitesy)
 
-- build status - [![Build Status](https://travis-ci.org/ram2510/gitesy.svg?branch=master)](https://travis-ci.org/ram2510/gitesy)
 - devDependencies - ![David](https://img.shields.io/david/dev/ram2510/gitesy.svg?style=flat-square)
 - license - [![GitHub license](https://img.shields.io/github/license/ram2510/gitesy.svg?style=flat&logo=github)](https://github.com/ram2510/gitesy/blob/master/LICENSE)
 

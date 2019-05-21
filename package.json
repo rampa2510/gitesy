@@ -5,7 +5,7 @@
   "main": "bin/index.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "jest",
+    "test": "jest && codecov",
     "lint": "standard --fix"
   },
   "repository": {
@@ -39,5 +39,10 @@
   },
   "bin": {
     "gitesy": "./index.js"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }
+

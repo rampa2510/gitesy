@@ -14,6 +14,7 @@ const { octokit } = require('./lib/octokit')
 
 const { join } = require('path')
 
+
 // ########################################################################################
 
 //= =======================================================================================
@@ -28,6 +29,8 @@ const { askToUsePrevCreds } = require('./lib/questions')
 
 const createRemoteAndLocalRepo = require('./lib/createRemoteAndLocalRepo')
 
+const addTemplate = require('./lib/addTemplate')
+
 // ########################################################################################
 
 // // we wether all the inputs were provided or not
@@ -36,12 +39,30 @@ if (!(program.name)) {
   program.help(make_red)
 }
 
+
 // get the directory from which command is executed from the terminal
 var pathname = process.cwd()
 
-// check wether the file exists or not
+// check whether a user wants to add a template 
 
-var isFileExists = require('./lib/files')(program.name, pathname)
+if(program.addTemplate){
+  (async function(templateName,path){
+    var isTemplateAdded = await addTemplate(templateName,path)
+    if(isTemplateAdded===null){
+      console.log(chalk.red("A template with the same name already exists please choose a different name"))
+    }else if(isTemplateAdded===false){
+      process.exit()
+    }else{
+      console.log(chalk.bold("template created you can now use it in!!"))
+    }
+  })(program.addTemplate,pathname)
+}
+
+// this try catch block will handle if a user only enter gitesy and not the commands
+try {
+  // check wether the file exists or not
+
+  var isFileExists = require('./lib/files')(program.name, pathname)
 
 if (isFileExists) {
   console.log(chalk.red('Already a git repository!'))
@@ -69,7 +90,7 @@ if (isFileExists) {
           throw new Error('')
         }
 
-        console.log(chalk.bold('Repo created!! Now you can navigate and start working') + "\ndon't forget to rename your app in the package.json and make the necessary changes")
+        console.log(chalk.bold('Repo created!! Now you can navigate and start working') + "\ndon't forget to rename your app in the package.json and make the necessary changes"+chalk.blue("\ndon't forget to npm i inside the directory to install dependencies"))
       } else {
         const { askRemoteCreds } = require('./lib/questions')
         // ask for creds username , pass
@@ -88,7 +109,7 @@ if (isFileExists) {
           throw new Error('')
         }
 
-        console.log(chalk.bold('Repo created!! Now you can navigate and start working') + "\ndon't forget to rename your app in the package.json and make the necessary changes")
+        console.log(chalk.bold('Repo created!! Now you can navigate and start working') + "\ndon't forget to rename your app in the package.json and make the necessary changes"+chalk.blue("\ndon't forget to npm i inside the directory to install dependencies"))
       }
     } catch (error) {
       // when a error occurs we want to delete the remote repo
@@ -124,7 +145,7 @@ if (isFileExists) {
         throw new Error('')
       }
 
-      console.log(chalk.bold('Repo created!! Now you can navigate and start working') + "\ndon't forget to rename your app in the package.json and make the necessary changes")
+      console.log(chalk.bold('Repo created!! Now you can navigate and start working') + "\ndon't forget to rename your app in the package.json and make the necessary changes"+chalk.blue("\ndon't forget to npm i inside the directory to install dependencies"))
     } catch (error) {
       // when a error occurs we want to delete the remote repo
 
@@ -139,3 +160,9 @@ if (isFileExists) {
     }
   }
 })()
+
+} catch (error) {
+  if(!program.addTemplate){
+  console.log(chalk.red("Use gitesy -h for help"))
+  }
+}

@@ -158,7 +158,8 @@ standard -h
 - Add more templates. I am more experienced in node so i created node templates you can add other language templates and create a pr but please make the template in such a way that it tries to cover all genral cases
 
 ---
-
+## Note - 
+If you are on a windows machine and you get an error stating that gitesy is not an internal recognised machine you need to change your path to ```C:\Program Files\nodejs``` from ```C:\Users(your username)\AppData\Roaming\npm```. If the error still persists feel free to contact me
 
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/codingpanda25.svg?label=Follow&style=social)

@@ -1,6 +1,6 @@
 {
   "name": "gitesy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A nodejs based cli which automates the creation of local and remote git repositories",
   "main": "bin/index.js",
   "preferGlobal": true,
@@ -16,7 +16,8 @@
     "cli",
     "node",
     "javascript",
-    "git"
+    "git",
+    "github"
   ],
   "author": "Ram pandey  <iamram2510@ieee.org>",
   "license": "MIT",

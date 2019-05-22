@@ -34,11 +34,11 @@
     - [Create a new repo](#create-a-new-repo)
     - [Add a new template](#add-a-new-template)
   - [Contributing](#contributing)
+    - [Prerequisites](#prerequisites)
     - [Step 1](#step-1)
     - [Step 2](#step-2)
     - [Step 3](#step-3)
     - [Ways to contribute](#ways-to-contribute)
-  - [License](#license)
 
 
 ---
@@ -74,16 +74,17 @@ git clone https://github.com/ram2510/gitesy.git
 
 When you clone this repo this is how your directory should look like
   ```
-  ├── coverage
-  ├── files
-  ├── index.js
-  ├── lib
-  ├── LICENSE
-  ├── node_modules
-  ├── package.json
-  ├── package-lock.json
-  ├── README.md
-  ├── templates
+ .
+├── coverage
+├── files
+├── index.js
+├── lib
+├── LICENSE
+├── node_modules
+├── package.json
+├── package-lock.json
+├── README.md
+└── templates
   ```
 
 
@@ -123,6 +124,16 @@ so that you can use it later
 
 > You can contribute to this project in various ways but let us follow the steps
 
+### Prerequisites
+> Install standard npm package you can learn more about it [here](https://standardjs.com)
+```
+npm install standard -g
+```
+> check whether the package is currently installed or not by using the command
+```
+standard -h
+```
+
 ### Step 1
 
 - **Option 1**
@@ -132,11 +143,10 @@ so that you can use it later
     - 👯 Clone this repo to your local machine using `https://github.com/ram2510/gitesy.git`
 
 ### Step 2
-
+- run the command ```npm run lint ``` which will run the standard --fix command as mentioned earlier in the script of package.json this will run the linter and make the code standarised
 - **HACK AWAY!** 🔨🔨🔨
 
 ### Step 3
-
 - 🔃 Create a new pull request using <a href="https://github.com/ram2510/gitesy/compare/" target="_blank">`https://github.com/ram2510/gitesy/compare/`</a>.
 
 ---

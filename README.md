@@ -40,6 +40,7 @@
     - [Step 3](#step-3)
     - [Ways to contribute](#ways-to-contribute)
 
+   - [Future plans](#future-plans )
 
 ---
 
@@ -156,6 +157,11 @@ standard -h
 - Fix typo,
 - Add documentation
 - Add more templates. I am more experienced in node so i created node templates you can add other language templates and create a pr but please make the template in such a way that it tries to cover all genral cases
+
+
+
+## Future plans 
+- [ ] Add suport for bitbucket and gitlab 
 
 ---
 ## Note - 

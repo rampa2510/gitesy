@@ -151,14 +151,13 @@ standard -h
 - run the command ```npm run lint ``` which will run the standard --fix command as the script is mentioned in the package.json file. This will run the linter and make the code standarised according.
 - 🔃 Create a new pull request using <a href="https://github.com/ram2510/gitesy/compare/" target="_blank">`https://github.com/ram2510/gitesy/compare/`</a>.
 
----
 
 ### Ways to contribute
 - Fix typo,
 - Add documentation
 - Add more templates. I am more experienced in node so i created node templates you can add other language templates and create a pr but please make the template in such a way that it tries to cover all genral cases
 
-
+---
 
 ## Future plans 
 - [ ] Add suport for bitbucket and gitlab 

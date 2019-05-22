@@ -143,10 +143,11 @@ standard -h
     - 👯 Clone this repo to your local machine using `https://github.com/ram2510/gitesy.git`
 
 ### Step 2
-- run the command ```npm run lint ``` which will run the standard --fix command as mentioned earlier in the script of package.json this will run the linter and make the code standarised
+
 - **HACK AWAY!** 🔨🔨🔨
 
 ### Step 3
+- run the command ```npm run lint ``` which will run the standard --fix command as the script is mentioned in the package.json file. This will run the linter and make the code standarised according.
 - 🔃 Create a new pull request using <a href="https://github.com/ram2510/gitesy/compare/" target="_blank">`https://github.com/ram2510/gitesy/compare/`</a>.
 
 ---

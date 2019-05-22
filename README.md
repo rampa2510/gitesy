@@ -84,7 +84,6 @@ When you clone this repo this is how your directory should look like
   ├── package-lock.json
   ├── README.md
   ├── templates
-  └── test
   ```
 
 
@@ -96,16 +95,18 @@ so that you can use it later
 ## Usage 
 
 ### Create a new repo
-- To create a local and remote repo use
+- To create a local and remote repo use gitesy -n command with the name of the repo
   ```
   gitesy -n test
   ```
 
-- After which if you are using this for the first time you will see aprompt for entering your credentials like this
+- After which if you are using this for the first time you will see a prompt for entering your credentials like this
   
   ![creds demo](files/creds.png)
 
   Enter them and then you will get prompts asking details of the repo fill them and then it will automatically create the repo. Then you will get the message and start working on the project !!!!
+  
+ - If you are not using this for the first time you will see a prompt asking whether gitesy can use creds you entered previously
 
 
 ### Add a new template

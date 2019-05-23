@@ -12,6 +12,7 @@
 
 [![GitHub API](https://img.shields.io/badge/GitHub-API-teal.svg?style=flat&logo=github)](https://developer.github.com/v3/) [![GitHub gitesy](https://img.shields.io/badge/gitesy-blue.svg?style=flat&logo=github)](https://gitesy.com/) [![Known Vulnerabilities](https://snyk.io/test/github/ram2510/gitesy/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ram2510/gitesy?targetFile=package.json) 
 [![HitCount](https://hits.dwyl.com/ram2510/gitesy.svg)](https://hits.dwyl.com/ram2510/gitesy)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/ram2510)
 
 - devDependencies - ![David](https://img.shields.io/david/dev/ram2510/gitesy.svg?style=flat-square)
 - license - [![GitHub license](https://img.shields.io/github/license/ram2510/gitesy.svg?style=flat&logo=github)](https://github.com/ram2510/gitesy/blob/master/LICENSE)
@@ -166,6 +167,6 @@ standard -h
 ## Note - 
 If you are on a windows machine and you get an error stating that gitesy is not an internal recognised machine you need to change your path to ```C:\Program Files\nodejs``` from ```C:\Users(your username)\AppData\Roaming\npm```. If the error still persists feel free to contact me
 
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/ram2510)
+
 ![Twitter Follow](https://img.shields.io/twitter/follow/codingpanda25.svg?label=Follow&style=social)
  [![linkedin](https://img.shields.io/badge/connect%20with%20me-linkedIn-green.svg?style=for-the-badge&logo=appveyor)](https://www.linkedin.com/in/iamram2510) [![GMAIL](https://img.shields.io/static/v1.svg?label=send&message=iamram2510@ieee.org&color=red&logo=gmail&style=social)](https://www.github.com/ram2510) 

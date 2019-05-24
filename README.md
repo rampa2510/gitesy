@@ -165,7 +165,7 @@ standard -h
 
 ---
 ## Note - 
-If you are on a windows machine and you get an error stating that gitesy is not an internal recognised machine you need to change your path to ```C:\Program Files\nodejs``` from ```C:\Users(your username)\AppData\Roaming\npm```. If the error still persists feel free to contact me
+If you are on a windows machine and you get an error stating that gitesy is not an internal recognised command you need to change your path to ```C:\Program Files\nodejs``` from ```C:\Users(your username)\AppData\Roaming\npm```. If the error still persists feel free to contact me
 
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/codingpanda25.svg?label=Follow&style=social)

@@ -162,6 +162,7 @@ standard -h
 
 ## Future plans 
 - [ ] Add suport for bitbucket and gitlab 
+- [ ] I am planning a feature where you can edit your package.json in your command line so that you don't need to configure it again
 
 ---
 ## Note - 

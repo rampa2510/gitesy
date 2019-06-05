@@ -149,7 +149,7 @@ standard -h
 - **HACK AWAY!** 🔨🔨🔨
 
 ### Step 3
-- run the command ```npm run lint ``` which will run the standard --fix command as the script is mentioned in the package.json file. This will run the linter and make the code standarised according.
+- run the command ```npm run lint ``` which will run the standard --fix command as the script is mentioned in the package.json file. This will run the linter.
 - 🔃 Create a new pull request using <a href="https://github.com/ram2510/gitesy/compare/" target="_blank">`https://github.com/ram2510/gitesy/compare/`</a>.
 
 

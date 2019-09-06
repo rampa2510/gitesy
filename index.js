@@ -54,7 +54,7 @@ if (program.addTemplate) {
     } else if (isTemplateAdded === false) {
       process.exit()
     } else {
-      console.log(chalk.bold('template created you can now use it in your repo!!'))
+      console.log(chalk.bold('Template created you can now use it in your repo!!'))
     }
   })(program.addTemplate, pathname)
 }

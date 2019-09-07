@@ -1,6 +1,5 @@
-
-![gitesy logo](files/LogoMakr_4LW8VJ.png)
-
+<!-- <center> -->
+<div style="text-align:center"><img src="./files/LogoMakr_4LW8VJ.png" /></div><!-- </center> -->
 
 # GITESY
 
@@ -40,6 +39,8 @@
     - [Step 2](#step-2)
     - [Step 3](#step-3)
     - [Ways to contribute](#ways-to-contribute)
+  - [Future plans](#future-plans)
+  - [Note -](#note)
 
    - [Future plans](#future-plans )
 

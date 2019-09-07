@@ -1,5 +1,5 @@
 <!-- <center> -->
-<div style="text-align:center"><img src="./files/LogoMakr_4LW8VJ.png" /></div><!-- </center> -->
+<p align="center"><img src="./files/LogoMakr_4LW8VJ.png" /></p><!-- </center> -->
 
 # GITESY
 

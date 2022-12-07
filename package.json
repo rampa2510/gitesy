@@ -33,7 +33,7 @@
     "configstore": "^4.0.0",
     "enquirer": "^2.3.0",
     "fs-extra": "^8.0.1",
-    "simple-git": "^1.113.0"
+    "simple-git": "^3.15.0"
   },
   "devDependencies": {
     "jest": "^24.9.0",
